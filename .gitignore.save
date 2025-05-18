@@ -1,0 +1,84 @@
+# Vivado project files
+*.jou
+*.log
+*.str
+*.opt
+*.xml
+*.cache
+*.webtalk
+*.wcfg
+*.wdb
+*.pb
+*.dcp
+
+# Project-wide build & temp folders
+.cache/
+.hw/
+.hw_ila/
+.sim/
+.xpr/
+.xgui/
+runs/
+tmp/
+project_*/          # Default Vivado subproject folders
+
+# Vivado-generated simulation files
+*.vcd
+*.vvp
+*.wdb
+*.svf
+*.lso
+*.key
+*.bit
+*.bin
+*.elf
+
+# Vivado metadata and intermediate files
+*.xsa
+*.xci
+*.xcix
+*.ltx
+*.prj
+*.mcs
+*.glo
+*.ngr
+*.bgn
+*.ncd
+*.ngc
+*.ngd
+*.par
+*.drc
+*.bld
+*.map
+*.pcf
+*.syr
+*.twr
+*.ut
+*.xise
+
+# Vivado HLS output
+solution*/         # Vivado HLS output folders
+*.rpt
+*.dat
+*.svh
+
+# Simulation temp
+*.vvp
+*.out
+*.log
+*.vcd
+*.fst
+
+# System-generated
+*.backup*
+*.orig
+*.tmp
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
