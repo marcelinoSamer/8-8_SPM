@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747609588" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/csa.dcp">
-  <File Type="PA-TCL" Name="spm2.tcl"/>
-  <File Type="REPORTS-TCL" Name="spm2_reports.tcl"/>
-  <File Type="RDS-RDS" Name="spm2.vds"/>
-  <File Type="RDS-UTIL" Name="spm2_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="spm2_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="spm2.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747661711" LaunchIncrCheckpoint="$PPRDIR/../../dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp">
+  <File Type="PA-TCL" Name="bin_to_bcd.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="bin_to_bcd_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="bin_to_bcd_reports.tcl"/>
+  <File Type="RDS-RDS" Name="bin_to_bcd.vds"/>
+  <File Type="RDS-UTIL" Name="bin_to_bcd_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="bin_to_bcd_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="bin_to_bcd.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bin_to_bcd_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="bin_to_bcd_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/bin_to_bcd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/spm2.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -47,14 +58,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/bin_to_bcd.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/helper_bcd_to_7seg.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -81,7 +84,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="spm2"/>
+      <Option Name="TopModule" Val="bin_to_bcd"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -93,6 +96,14 @@
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
     <File Path="$PSRCDIR/utils_1/imports/synth_1/csa.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

@@ -1,101 +1,16 @@
 Time resolution is 1 ps
-Time:                    0, x=   0, y=   0, count=0, prod=     0, done=0
-Time:                20000, x=   8, y=   8, count=0, prod=     0, done=0
-Time:                25000, x=   8, y=   8, count=1, prod=     0, done=0
-Time:                35000, x=   8, y=   8, count=2, prod=     0, done=0
-Time:                45000, x=   8, y=   8, count=3, prod=     0, done=0
-Time:                55000, x=   8, y=   8, count=4, prod=     0, done=0
-Time:                65000, x=   8, y=   8, count=5, prod=   128, done=0
-Time:                75000, x=   8, y=   8, count=6, prod=   128, done=0
-Time:                85000, x=   8, y=   8, count=7, prod=   128, done=0
-Time:                95000, x=   8, y=   8, count=0, prod=   128, done=0
-Time:               105000, x=   8, y=   8, count=1, prod=   128, done=0
-Time:               115000, x=   8, y=   8, count=2, prod=   128, done=0
-Time:               125000, x=   8, y=   8, count=3, prod=   128, done=0
-Time:               135000, x=   8, y=   8, count=4, prod=   128, done=0
-Time:               145000, x=   8, y=   8, count=5, prod=  2176, done=0
-Time:               155000, x=   8, y=   8, count=6, prod=  2176, done=0
-Time:               165000, x=   8, y=   8, count=7, prod=  2176, done=0
-Time:               175000, x=   8, y=   8, count=0, prod=  2176, done=0
-Time:               185000, x=   8, y=   8, count=1, prod=  2176, done=0
-Time:               195000, x=   8, y=   8, count=2, prod=  2176, done=0
-Time:               205000, x=   8, y=   8, count=3, prod=  2176, done=0
-Time:               215000, x=   8, y=   8, count=4, prod=  2176, done=0
-Time:               225000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               235000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               245000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               255000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               265000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               275000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               285000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               295000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               305000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               315000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               325000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               335000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               345000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               355000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               365000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               375000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               385000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               395000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               405000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               415000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               425000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               435000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               445000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               455000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               465000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               475000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               485000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               495000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               505000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               515000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               525000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               535000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               545000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               555000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               565000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               575000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               585000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               595000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               605000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               615000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               625000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               635000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               645000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               655000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               665000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               675000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               685000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               695000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               705000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               715000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               725000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               735000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               745000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               755000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               765000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               775000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               785000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               795000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               805000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               815000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               825000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               835000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               845000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               855000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               865000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               875000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               885000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               895000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               905000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               915000, x=   8, y=   8, count=2, prod=-30592, done=0
-Time:               925000, x=   8, y=   8, count=3, prod=-30592, done=0
-Time:               935000, x=   8, y=   8, count=4, prod=-30592, done=0
-Time:               945000, x=   8, y=   8, count=5, prod=-30592, done=0
-Time:               955000, x=   8, y=   8, count=6, prod=-30592, done=0
-Time:               965000, x=   8, y=   8, count=7, prod=-30592, done=0
-Time:               975000, x=   8, y=   8, count=0, prod=-30592, done=0
-Time:               985000, x=   8, y=   8, count=1, prod=-30592, done=0
-Time:               995000, x=   8, y=   8, count=2, prod=-30592, done=0
+Time	Binary		BCD
+----	------		---
+  10ns	    0		0
+  20ns	 1234		4660
+  30ns	 2468		9320
+  40ns	 3702		14082
+  50ns	 4936		18742
+  60ns	 6170		24944
+  70ns	 7404		29700
+  80ns	 8638		34360
+  90ns	 9872		39026
+ 100ns	11106		69894
+ 110ns	12340		74560
+ 120ns	65535		415029
+$finish called at time : 120 ns : File "C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sim_1/new/bin_to_bcd_tb.v" Line 54

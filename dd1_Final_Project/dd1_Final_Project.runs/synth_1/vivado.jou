@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon May 19 02:06:32 2025
-# Process ID: 3720
-# Current directory: C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.runs/synth_1
-# Command line: vivado.exe -log spm2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spm2.tcl
-# Log file: C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.runs/synth_1/spm2.vds
-# Journal file: C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.runs/synth_1\vivado.jou
+# Start of session at: Mon May 19 16:35:14 2025
+# Process ID: 12012
+# Current directory: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1
+# Command line: vivado.exe -log bin_to_bcd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bin_to_bcd.tcl
+# Log file: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/bin_to_bcd.vds
+# Journal file: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1\vivado.jou
 # Running On: CSE-P07-2168-50, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34016 MB
 #-----------------------------------------------------------
-source spm2.tcl -notrace
+source bin_to_bcd.tcl -notrace

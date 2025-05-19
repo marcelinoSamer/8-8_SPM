@@ -2,7 +2,9 @@
 2020.2
 Apr 18 2022
 16:05:34
-C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sim_1/new/bin_to_bcd_tb.v,1747658954,verilog,,,,bin_to_bcd_tb,,,,,,,,
+C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/bin_to_bcd.v,1747662224,verilog,,C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sim_1/new/bin_to_bcd_tb.v,,bin_to_bcd,,,,,,,,
 C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/sim_1/new/spm_tb.v,1747606583,verilog,,,,spm_tb,,,,,,,,
 C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/csa.v,1747591745,verilog,,C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/half_adder.v,,csa,,,,,,,,
 C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/half_adder.v,1747316184,verilog,,C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/spm.v,,half_adder,,,,,,,,

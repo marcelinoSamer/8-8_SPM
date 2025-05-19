@@ -78,13 +78,7 @@ module top_control_unit(
 
 spm spm0 (.clk(clk),.rst(reset), .x(parallel), .y(serial), .prod(product)); // out: prod // edit to accept [7:0] y
 
-bin_to_bcd bin_to_bcd0 ( .clk(clk), .reset(reset), 
-                         .start(1), // revise start again
-                         .binary_in(product),
-                         .done(done), // revise 
-                         .sign(sign1), 
-                         .bcd_digit(bcd)); // out: done, sign, bcd_digit
-                                                                                                             
+//bin_to_bcd bin_to_bcd0 ( .clk(clk), .reset(reset),.start(1), .binary_in(product .done(done), .sign(sign1),.bcd_digit(bcd)); 
 
 seven_seg_display display( .clk(clk), .reset(reset), 
     .bcd_digit(bcd),  // 5 × 4-bit BCD digits
