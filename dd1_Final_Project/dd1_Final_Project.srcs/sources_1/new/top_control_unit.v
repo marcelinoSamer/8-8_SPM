@@ -21,98 +21,231 @@
 
 
 module top_control_unit(
-    // all modules
     input wire clk,
-    input wire reset, // start
-    
-    // spm mpodule    
-    input [7:0] parallel,
-//    input [7:0] serial,
-    input serial, //testing
-    
-    // for scrolling
+    input wire reset,
     input wire btnL,
     input wire btnR,
-    output reg [2:0] scroll_offset, // intermediate not output
-    
-    output done,
-    
-    // final out
-    output reg [6:0] displayedSign,
-    output reg [6:0] displayed1, displayed2, displayed3
-    
-    
+    input wire btnC,
+    input wire [7:0] multiplicand,
+    input wire [7:0] multiplier,
+    output wire [6:0] seg,
+    output wire [3:0] an,
+    output led
 );
 
-// spm module
-    wire [15:0] product; // or reg
-
-// bin_to_bcd module
-    wire sign1;
-    wire [19:0] bcd;
+// Button detectors for left and right
+    wire left_pressed, right_pressed, start_pressed, reset_pressed;
+    pushbutton_detector pb_left (
+        .clk(clk),
+        .reset(reset),
+        .x(btnL),
+        .z(left_pressed)
+    );
+    pushbutton_detector pb_right (
+        .clk(clk),
+        .reset(reset),
+        .x(btnR),
+        .z(right_pressed)
+    );
+    pushbutton_detector pb_center (
+        .clk(clk),
+        .reset(reset),
+        .x(btnC),
+        .z(start_pressed)
+    );
+//    pushbutton_detector pb_up (
+//        .clk(clk),
+//        .reset(reset),
+//        .x(btnC),
+//        .z(reset_pressed)
+//    );
+    assign reset = reset_pressed; 
+    wire [15:0] product;
     
-// seven_seg_display module
-    wire [6:0] digit [5:0];
     
-// toggle logic
-    reg btnL_prev = 0;
-    reg btnR_prev = 0;
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            scroll_offset <= 0;
-            btnL_prev <= 0;
-            btnR_prev <= 0;
-        end else begin
-            btnL_prev <= btnL;
-            btnR_prev <= btnR;
+    serial_parallel_multiplier spm (
+        .clk(clk),
+        .rst(reset_pressed),
+        .start(start_pressed),
+        .x(multiplicand),
+        .y(multiplier),
+        .P(product),
+        .flag(done)
+        
+    );
+    assign led = done;
+//----------------------
+// BCD Conversion
+//----------------------
+    wire [19:0] bcd_unsigned;
+    wire sign_bit = product[15];
+    
+    bin_to_bcd #(.W(16)) converter (
+        .bin(product),
+        .bcd(bcd_unsigned)
+    );
 
-            // Left button scrolls right (decreases offset)
-            if (btnL && !btnL_prev && scroll_offset > 0)
-                scroll_offset <= scroll_offset - 1;
+    // FSM state
+    reg [1:0] state = 0;
 
-            // Right button scrolls left (increases offset)
-            if (btnR && !btnR_prev && scroll_offset < 1)
-                scroll_offset <= scroll_offset + 1;
-        end
+    // Assign BCD digits
+    wire [3:0] d0 = bcd_unsigned[3:0];
+    wire [3:0] d1 = bcd_unsigned[7:4];
+    wire [3:0] d2 = bcd_unsigned[11:8];
+    wire [3:0] d3 = bcd_unsigned[15:12];
+    wire [3:0] d4 = bcd_unsigned[19:16];
+    // Sign digit: 10 = '-', 15 = blank (can be changed as needed)
+    wire [3:0] d5 = sign_bit ? 4'd10 : 4'd15;
+
+    // Active BCDs for each display slot
+    reg [15:0] active_digits;  // 5 × 4-bit digits: d5 dX dX dX
+
+    // State transition
+    wire clk_out;
+    clockDivider #(500000) divide (clk,reset,clk_out);
+   always @(posedge clk_out or posedge reset) begin
+    if (reset)
+        state <= 0;
+    else begin
+        case (state)
+            2'd0: if (right_pressed) state <= 1;
+            2'd1: begin
+                if (right_pressed) state <= 2;
+                else if (left_pressed) state <= 0;
+            end
+            2'd2: if (left_pressed) state <= 1;
+            default: state <= 0;
+        endcase
     end
-
-spm spm0 (.clk(clk),.rst(reset), .x(parallel), .y(serial), .prod(product)); // out: prod // edit to accept [7:0] y
-
-//bin_to_bcd bin_to_bcd0 ( .clk(clk), .reset(reset),.start(1), .binary_in(product .done(done), .sign(sign1),.bcd_digit(bcd)); 
-
-seven_seg_display display( .clk(clk), .reset(reset), 
-    .bcd_digit(bcd),  // 5 × 4-bit BCD digits
-    .sign(sign),
-    .d5(digit[5]), .d4(digit[4]) , .d3(digit[3]), .d2(digit[2]), .d1(digit[1]), .d0(digit[0]), // sign - tenthousands - ... - units
-    .an()           // 6 digits: 5 for number, 1 for sign
-);
-
-always @(*) begin
-    displayedSign = digit[5];  // Sign is always leftmost
-
-    case (scroll_offset)
-        0: begin
-            displayed1 = digit[4];
-            displayed2 = digit[3];
-            displayed3 = digit[2];
-        end
-        1: begin
-            displayed1 = digit[3];
-            displayed2 = digit[2];
-            displayed3 = digit[1];
-        end
-        2: begin
-            displayed1 = digit[2];
-            displayed2 = digit[1];
-            displayed3 = digit[0];
-        end
-        default: begin
-            displayed1 = digit[4];
-            displayed2 = digit[3];
-            displayed3 = digit[2];
-        end
-    endcase
 end
 
+    // Determine displayed digits based on state
+    always @(*) begin
+        case (state)
+            2'd0: active_digits = {d5, d4, d3, d2}; // State 1
+            2'd1: active_digits = {d5, d3, d2, d1}; // State 2
+            2'd2: active_digits = {d5, d2, d1, d0}; // State 3
+            default: active_digits = {d5, d4, d3, d2};
+        endcase
+    end
 
+    // Drive the display
+    seven_seg_display display_unit (
+        .clk(clk),
+        .reset(reset),
+        .bcd_digit(active_digits), // 5 × 4-bit: d5 = sign, rest = digits
+        .seg(seg),
+        .an(an)
+    );
+
+endmodule
+
+
+module pushbutton_detector(
+input clk,reset,x,
+output z
+    );
+wire clk_out;
+clockDivider #(500000) divide (clk,reset,clk_out);
+wire out;
+debouncer deb(clk_out,reset,x,out);
+wire out2;
+synchronizer sync(clk_out,out,out2);
+wire out3;
+rising_edge rizz(clk_out,reset,out2,out3);
+assign z = out3;     
+endmodule
+
+module rising_edge(
+input clk, reset, x,
+output reg z
+    );
+    
+//    reg  state, nextState;
+//    parameter A = 2'b00, B = 2'b01, C =2'b10;
+    
+//    always @ (x or state)
+//    case (state)
+//    A: if (x==0) nextState = A;
+//    else nextState = B;
+//    B: if (x==0) nextState = A;
+//    else nextState = C;
+//    C: if (x==0) nextState = A;
+//    else nextState = C;
+//    default: nextState = A;
+//    endcase
+
+//    always @ (posedge clk or posedge reset) begin
+//    if(reset) state <= A;
+//    else state <= nextState;
+//    end
+
+//    assign z = (state == B);
+    reg x_prev;
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            x_prev <= 0;
+            z <= 0;
+        end else begin
+            z <= x & ~x_prev;  // Output 1 for 1 clock cycle when rising edge
+            x_prev <= x;
+        end
+    end
+endmodule
+
+module debouncer(input clk, rst, in, output out);
+reg q1,q2,q3;
+always@(posedge clk, posedge rst) begin
+if(rst == 1'b1) begin
+q1 <= 0;
+q2 <= 0;
+q3 <= 0;
+end
+else begin
+q1 <= in;
+q2 <= q1;
+q3 <= q2;
+end
+end
+assign out = (rst) ? 0 : q1&q2&q3;
+endmodule
+
+module synchronizer ( input wire clk, sig, output reg sig1 );
+ reg meta;
+ always @(posedge clk) begin
+ meta <= sig;
+ sig1 <= meta;
+ end
+endmodule
+
+module clockDivider #(parameter n = 50000000)
+(input clk, rst, output reg clk_out);
+wire [31:0] count;
+// Big enough to hold the maximum possible value
+// Increment count
+counter_x_bit #(32,n) counterMod
+(.clk(clk), .reset(rst),.en(1), .count(count));
+// Handle the output clock
+always @ (posedge clk, posedge rst) begin
+if (rst) // Asynchronous Reset
+clk_out <= 0;
+else if (count == n-1)
+clk_out <= ~ clk_out;
+end
+endmodule
+
+module counter_x_bit #(parameter x = 3, n = 6)
+(input clk, reset, en, output [x-1:0] count);
+reg [x-1:0] count;
+always @(posedge clk, posedge reset) begin
+if (reset == 1)
+    count <= 0; 
+else if(!en)
+    count <= count; 
+else if(count == n-1)
+    count <= 0; 
+else
+    count <= count + 1;
+end
 endmodule
