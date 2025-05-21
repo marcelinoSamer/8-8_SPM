@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed May 21 04:25:43 2025
+# Process ID: 11784
+# Current directory: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1
+# Command line: vivado.exe -log top_control_unit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_control_unit.tcl -notrace
+# Log file: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.vdi
+# Journal file: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1\vivado.jou
+# Running On: CSE-P07-2168-50, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34016 MB
+#-----------------------------------------------------------
+source top_control_unit.tcl -notrace

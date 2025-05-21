@@ -1,0 +1,2468 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 10324
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed May 21 00:13:00 EET 2025
+Time zone: 	Eastern European Standard Time (Africa/Cairo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -agentpath:C:\Program Files\SentinelOne\Sentinel Agent 24.1.5.277\SentinelJava64.dll=extendedCapabilities]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	KirollosFady
+User home directory: C:/Users/Kirollosfady
+User working directory: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.1
+RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/Kirollosfady/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/Kirollosfady/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/Kirollosfady/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/vivado.log
+Vivado journal file: 	C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/vivado.jou
+Engine tmp dir: 	C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/.Xil/Vivado-10324-CSE-P07-2168-50
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	424 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,325 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,325 MB. GUI used memory: 59 MB. Current time: 5/21/25, 12:13:01 AM EET
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+100641kb) [00:00:12]
+// [Engine Memory]: 1,325 MB (+1237756kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  2689 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// [GUI Memory]: 121 MB (+18507kb) [00:00:14]
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 1584.465 ; gain = 0.000 
+// Project name: dd1_Final_Project; location: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // D
+// [GUI Memory]: 132 MB (+5432kb) [00:00:37]
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 01:14:21 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 9, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1205 ms.
+dismissDialog("Opening Editor"); // bA
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/seven_seg_display.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 01:16:53 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 01:16:53 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 139 MB (+576kb) [00:05:58]
+// Elapsed time: 129 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // n
+// Elapsed time: 76 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bA
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-21:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 1584.465 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  6961 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB3FA6A 
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3271.672 ; gain = 1687.207 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/seven_seg_display.bit} [get_hw_devices xc7a35t_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,132 MB. GUI used memory: 82 MB. Current time: 5/21/25, 12:21:05 AM EET
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 34 seconds
+dismissDialog("Auto Connect"); // bA
+// [Engine Memory]: 3,137 MB (+1830978kb) [00:08:16]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/seven_seg_display.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 3,141 MB. GUI used memory: 82 MB. Current time: 5/21/25, 12:51:07 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,148 MB. GUI used memory: 83 MB. Current time: 5/21/25, 1:02:02 AM EET
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view
+// Elapsed time: 2536 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // n - Double Click - Node
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1193 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 23 seconds
+selectCodeEditor("top_control_unit.v", 78, 315); // be
+// Elapsed time: 124 seconds
+selectCodeEditor("top_control_unit.v", 135, 314); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 26 seconds
+selectCodeEditor("top_control_unit.v", 151, 132); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 174, 113); // be
+selectCodeEditor("top_control_unit.v", 146, 174); // be
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 426, 141); // be
+// Elapsed time: 34 seconds
+selectCodeEditor("top_control_unit.v", 335, 201); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("top_control_unit.v", 34, 246); // be
+selectCodeEditor("top_control_unit.v", 26, 247); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,176 MB. GUI used memory: 78 MB. Current time: 5/21/25, 1:08:57 AM EET
+// Elapsed time: 33 seconds
+selectCodeEditor("top_control_unit.v", 26, 168); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 222, 213); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("top_control_unit.v", 54, 246); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 714 seconds
+selectCodeEditor("top_control_unit.v", 332, 502); // be
+selectCodeEditor("top_control_unit.v", 226, 472); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("top_control_unit.v", 0, 207); // be
+// Elapsed time: 200 seconds
+selectCodeEditor("top_control_unit.v", 26, 94); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 27 seconds
+selectCodeEditor("top_control_unit.v", 30, 235); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 37 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 90, 340); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("top_control_unit.v", 123, 161); // be
+// Elapsed time: 32 seconds
+selectCodeEditor("top_control_unit.v", 165, 160); // be
+selectCodeEditor("top_control_unit.v", 159, 197); // be
+// Elapsed time: 31 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "seven_seg_display.xdc", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_seg_display (seven_seg_display.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_seg_display (seven_seg_display.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_seg_display (seven_seg_display.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_seg_display (seven_seg_display.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 319, 213); // be
+// Elapsed time: 59 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 342, 264); // be
+selectCodeEditor("top_control_unit.v", 76, 267); // be
+selectCodeEditor("top_control_unit.v", 112, 304); // be
+// Elapsed time: 78 seconds
+selectCodeEditor("top_control_unit.v", 97, 364); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,178 MB. GUI used memory: 78 MB. Current time: 5/21/25, 1:38:57 AM EET
+// Elapsed time: 749 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "seven_seg_display.xdc", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "seven_seg_display.v", 3); // m
+// Elapsed time: 404 seconds
+selectCodeEditor("seven_seg_display.v", 112, 229); // be
+// Elapsed time: 202 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "seven_seg_display.xdc", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "seven_seg_display.v", 3); // m
+// Elapsed time: 227 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+// Elapsed time: 108 seconds
+selectCodeEditor("top_control_unit.v", 0, 74); // be
+// Elapsed time: 44 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+// Elapsed time: 225 seconds
+selectCodeEditor("top_control_unit.v", 136, 225); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("top_control_unit.v", 343, 185); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,182 MB. GUI used memory: 76 MB. Current time: 5/21/25, 2:08:58 AM EET
+// Elapsed time: 375 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // aa
+// Elapsed time: 40 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "serial_parallel_multipilier"); // aa
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "serial_parallel_multiplier"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 51 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/serial_parallel_multiplier.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/serial_parallel_multiplier.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,206 MB. GUI used memory: 78 MB. Current time: 5/21/25, 2:13:58 AM EET
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, serial_parallel_multiplier (serial_parallel_multiplier.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, serial_parallel_multiplier (serial_parallel_multiplier.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1144 ms.
+dismissDialog("Opening Editor"); // bA
+typeControlKey((HResource) null, "serial_parallel_multiplier.v", 'v'); // be
+// Elapsed time: 29 seconds
+selectCodeEditor("serial_parallel_multiplier.v", 234, 416); // be
+selectCodeEditor("serial_parallel_multiplier.v", 234, 416); // be
+selectCodeEditor("serial_parallel_multiplier.v", 234, 416, false, false, false, false, true); // be - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("serial_parallel_multiplier.v", 296, 193); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("serial_parallel_multiplier.v", 0, 160); // be
+typeControlKey((HResource) null, "serial_parallel_multiplier.v", 'c'); // be
+// Elapsed time: 84 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin_to_bcd (bin_to_bcd.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin_to_bcd (bin_to_bcd.v)]", 5, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1304 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "bin_to_bcd.v", 'c'); // be
+// Elapsed time: 265 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 4); // m
+selectCodeEditor("serial_parallel_multiplier.v", 192, 253); // be
+selectCodeEditor("serial_parallel_multiplier.v", 354, 164); // be
+selectCodeEditor("serial_parallel_multiplier.v", 354, 164, false, false, false, false, true); // be - Double Click
+// Elapsed time: 178 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 90, 373); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 108, 415); // be
+selectCodeEditor("top_control_unit.v", 261, 150); // be
+// Elapsed time: 42 seconds
+selectCodeEditor("top_control_unit.v", 172, 77); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 72 seconds
+selectCodeEditor("top_control_unit.v", 82, 301); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin_to_bcd.v", 5); // m
+selectCodeEditor("bin_to_bcd.v", 245, 261); // be
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin_to_bcd.v", 5); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 154, 266); // be
+selectCodeEditor("top_control_unit.v", 180, 280); // be
+// Elapsed time: 88 seconds
+selectCodeEditor("top_control_unit.v", 165, 278); // be
+selectCodeEditor("top_control_unit.v", 159, 281); // be
+selectCodeEditor("top_control_unit.v", 159, 281, false, false, false, false, true); // be - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top_control_unit.v", 167, 315); // be
+// Elapsed time: 45 seconds
+selectCodeEditor("top_control_unit.v", 153, 265); // be
+selectCodeEditor("top_control_unit.v", 153, 265, false, false, false, false, true); // be - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("top_control_unit.v", 384, 177); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 173, 43); // be
+selectCodeEditor("top_control_unit.v", 173, 43, false, false, false, false, true); // be - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("top_control_unit.v", 31, 229); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 142, 211); // be
+selectCodeEditor("top_control_unit.v", 142, 211, false, false, false, false, true); // be - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("top_control_unit.v", 165, 174); // be
+selectCodeEditor("top_control_unit.v", 165, 174, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 186, 313); // be
+// Elapsed time: 117 seconds
+selectCodeEditor("top_control_unit.v", 355, 301); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("top_control_unit.v", 32, 283); // be
+selectCodeEditor("top_control_unit.v", 55, 270); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 604 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1444 ms. Increasing delay to 3000 ms.
+// Elapsed time: 21 seconds
+selectCodeEditor("top_control_unit.v", 68, 382); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("top_control_unit.v", 24, 194); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 3, 201); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("top_control_unit.v", 124, 282); // be
+selectCodeEditor("top_control_unit.v", 79, 370); // be
+// Elapsed time: 130 seconds
+selectCodeEditor("top_control_unit.v", 94, 386); // be
+selectCodeEditor("top_control_unit.v", 94, 386, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 130, 365); // be
+selectCodeEditor("top_control_unit.v", 130, 365, false, false, false, false, true); // be - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("top_control_unit.v", 30, 196); // be
+selectCodeEditor("top_control_unit.v", 30, 196, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 36, 232); // be
+selectCodeEditor("top_control_unit.v", 36, 232, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 55, 262); // be
+selectCodeEditor("top_control_unit.v", 55, 262, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 48, 291); // be
+selectCodeEditor("top_control_unit.v", 48, 291, false, false, false, false, true); // be - Double Click
+// Elapsed time: 42 seconds
+selectCodeEditor("top_control_unit.v", 130, 371); // be
+selectCodeEditor("top_control_unit.v", 130, 371, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 125, 111); // be
+selectCodeEditor("top_control_unit.v", 125, 111, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 146, 400); // be
+selectCodeEditor("top_control_unit.v", 146, 400, false, false, false, false, true); // be - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("top_control_unit.v", 119, 363); // be
+// Elapsed time: 30 seconds
+selectCodeEditor("top_control_unit.v", 75, 413); // be
+selectCodeEditor("top_control_unit.v", 73, 436); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,212 MB. GUI used memory: 80 MB. Current time: 5/21/25, 2:43:58 AM EET
+// Elapsed time: 240 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10, true); // D - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "top"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Constraints File"); // J
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 12, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("seven_seg_display.xdc", 0, 9); // be
+typeControlKey((HResource) null, "seven_seg_display.xdc", 'c'); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 13, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1129 ms.
+dismissDialog("Opening Editor"); // bA
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 307, 57); // be
+selectCodeEditor("top.xdc", 195, 56); // be
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 4); // m
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 6); // m
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 192, 183); // be
+selectCodeEditor("top_control_unit.v", 192, 183, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 6); // m
+selectCodeEditor("top.xdc", 327, 434); // be
+selectCodeEditor("top.xdc", 327, 434, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 347, 454); // be
+selectCodeEditor("top.xdc", 347, 454, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 387, 287); // be
+selectCodeEditor("top.xdc", 327, 329); // be
+selectCodeEditor("top.xdc", 327, 329, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 338, 353); // be
+selectCodeEditor("top.xdc", 338, 353, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 310, 384); // be
+selectCodeEditor("top.xdc", 310, 384, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 323, 400); // be
+selectCodeEditor("top.xdc", 323, 400, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 337, 281); // be
+selectCodeEditor("top.xdc", 337, 281, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 335, 298); // be
+selectCodeEditor("top.xdc", 335, 298, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 314, 330); // be
+selectCodeEditor("top.xdc", 314, 330, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 331, 344); // be
+selectCodeEditor("top.xdc", 331, 344, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 321, 383); // be
+selectCodeEditor("top.xdc", 321, 383, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 333, 391); // be
+selectCodeEditor("top.xdc", 333, 391, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+// Elapsed time: 29 seconds
+selectCodeEditor("top.xdc", 318, 432); // be
+selectCodeEditor("top.xdc", 318, 432, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 345, 450); // be
+selectCodeEditor("top.xdc", 345, 450, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 176, 194); // be
+selectCodeEditor("top_control_unit.v", 176, 194, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 6); // m
+selectCodeEditor("top.xdc", 313, 124); // be
+selectCodeEditor("top.xdc", 313, 124, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 332, 152); // be
+selectCodeEditor("top.xdc", 332, 152, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 317, 175); // be
+selectCodeEditor("top.xdc", 317, 175, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 337, 197); // be
+selectCodeEditor("top.xdc", 337, 197, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 313, 225); // be
+selectCodeEditor("top.xdc", 313, 225, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 349, 248); // be
+selectCodeEditor("top.xdc", 349, 248, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 325, 282); // be
+selectCodeEditor("top.xdc", 325, 282, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 339, 301); // be
+selectCodeEditor("top.xdc", 339, 301, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 319, 334); // be
+selectCodeEditor("top.xdc", 319, 334, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 329, 354); // be
+selectCodeEditor("top.xdc", 329, 354, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 321, 389); // be
+selectCodeEditor("top.xdc", 321, 389, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 335, 402); // be
+selectCodeEditor("top.xdc", 335, 402, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 324, 430); // be
+selectCodeEditor("top.xdc", 324, 430, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 334, 447); // be
+selectCodeEditor("top.xdc", 334, 447, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 324, 486); // be
+selectCodeEditor("top.xdc", 324, 486, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 338, 500); // be
+selectCodeEditor("top.xdc", 338, 500, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 328, 469); // be
+selectCodeEditor("top.xdc", 328, 469, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 350, 482); // be
+selectCodeEditor("top.xdc", 350, 482, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("top.xdc", 385, 209); // be
+// Elapsed time: 88 seconds
+selectCodeEditor("top.xdc", 375, 218); // be
+// Elapsed time: 124 seconds
+selectCodeEditor("top.xdc", 193, 498); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 13, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_SET_TARGET_UCF, "Set as Target Constraint File"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SET_TARGET_UCF
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property target_constrs_file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc [current_fileset -constrset] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top top_control_unit [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/seven_seg_display.dcp 
+// 'cW' command handler elapsed time: 6 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 03:53:08 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 03:53:09 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 33 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-9250] cannot index into non-array type wire for 'product' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:80]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;80;-;;-;16;-;"); // ah
+// Elapsed time: 17 seconds
+selectCodeEditor("top_control_unit.v", 174, 179); // be
+selectCodeEditor("top_control_unit.v", 174, 179, false, false, false, false, true); // be - Double Click
+// Elapsed time: 386 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-9250] cannot index into non-array type wire for 'product' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:80]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;80;-;;-;16;-;"); // ah
+// Elapsed time: 75 seconds
+selectCodeEditor("top_control_unit.v", 43, 230); // be
+selectCodeEditor("top_control_unit.v", 43, 230, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 04:01:52 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:01:52 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-35] 'product' is not a constant [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:80]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;80;-;;-;16;-;"); // ah
+// Elapsed time: 33 seconds
+selectCodeEditor("top_control_unit.v", 169, 340); // be
+selectCodeEditor("top_control_unit.v", 169, 340, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 169, 329); // be
+selectCodeEditor("top_control_unit.v", 169, 329, false, false, false, false, true); // be - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("top_control_unit.v", 135, 282); // be
+selectCodeEditor("top_control_unit.v", 237, 181); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("top_control_unit.v", 40, 296); // be
+selectCodeEditor("top_control_unit.v", 40, 296, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 04:04:37 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:04:37 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 92 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 37 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port an[0] can not be placed on PACKAGE_PIN U2 because the PACKAGE_PIN is occupied by port an[3] [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc:28]. ]", 7, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\constrs_1\new\top.xdc;-;;-;16;-;line;-;28;-;;-;16;-;"); // ah
+selectCodeEditor("top.xdc", 184, 316); // be
+selectCodeEditor("top.xdc", 184, 316, false, false, false, false, true); // be - Double Click
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+selectCodeEditor("top.xdc", 279, 313); // be
+// Elapsed time: 49 seconds
+selectCodeEditor("top.xdc", 332, 206); // be
+selectCodeEditor("top.xdc", 320, 172); // be
+selectCodeEditor("top.xdc", 271, 162); // be
+selectCodeEditor("top.xdc", 297, 161); // be
+selectCodeEditor("top.xdc", 328, 180); // be
+selectCodeEditor("top.xdc", 314, 181); // be
+selectCodeEditor("top.xdc", 296, 207); // be
+selectCodeEditor("top.xdc", 319, 214); // be
+selectCodeEditor("top.xdc", 308, 231); // be
+selectCodeEditor("top.xdc", 335, 230); // be
+selectCodeEditor("top.xdc", 311, 264); // be
+selectCodeEditor("top.xdc", 317, 263); // be
+selectCodeEditor("top.xdc", 318, 264); // be
+selectCodeEditor("top.xdc", 320, 267); // be
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 6); // m
+// Elapsed time: 10 seconds
+selectCodeEditor("top.xdc", 354, 76); // be
+selectCodeEditor("top.xdc", 14, 62); // be
+selectCodeEditor("top.xdc", 3, 61); // be
+typeControlKey((HResource) null, "top.xdc", 'c'); // be
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+selectCodeEditor("top_control_unit.v", 120, 158); // be
+selectCodeEditor("top_control_unit.v", 120, 158, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 123, 134); // be
+selectCodeEditor("top_control_unit.v", 123, 134, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 6); // m
+selectCodeEditor("top.xdc", 300, 163); // be
+selectCodeEditor("top.xdc", 195, 111); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 2); // m
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 2); // m
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectCodeEditor("top.xdc", 291, 111); // be
+selectCodeEditor("top.xdc", 289, 113); // be
+selectCodeEditor("top.xdc", 289, 113, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 185, 161); // be
+selectCodeEditor("top.xdc", 185, 161, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top.xdc", 327, 133); // be
+selectCodeEditor("top.xdc", 327, 133, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top.xdc", 337, 130); // be
+selectCodeEditor("top.xdc", 337, 130, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 186, 160); // be
+selectCodeEditor("top.xdc", 186, 160, false, false, false, false, true); // be - Double Click
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // al
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 04:11:13 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:11:13 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 81 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/seven_seg_display.xdc:40]. ]", 5, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\constrs_1\new\seven_seg_display.xdc;-;;-;16;-;line;-;40;-;;-;16;-;"); // ah
+// WARNING: HEventQueue.dispatchEvent() is taking  1197 ms.
+// Elapsed time: 22 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port an[0] can not be placed on PACKAGE_PIN U2 because the PACKAGE_PIN is occupied by port an[3] [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc:37]. ]", 6, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port an[0] can not be placed on PACKAGE_PIN U2 because the PACKAGE_PIN is occupied by port an[3] [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc:37]. ]", 6, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port an[0] can not be placed on PACKAGE_PIN U2 because the PACKAGE_PIN is occupied by port an[3] [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/top.xdc:37]. ]", 6, true, false, false, false, false, true); // ah - Double Click - Node
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 20, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 20, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("seven_seg_display.xdc", 301, 129); // be
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 147 MB (+588kb) [03:01:06]
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // al
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 04:13:58 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:13:58 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 82 MB. Current time: 5/21/25, 3:13:59 AM EET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 20 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/seven_seg_display.xdc:40]. ]", 5, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\constrs_1\new\seven_seg_display.xdc;-;;-;16;-;line;-;40;-;;-;16;-;"); // ah
+selectCodeEditor("seven_seg_display.xdc", 138, 152); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, seven_seg_display.xdc]", 20, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/seven_seg_display.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/constrs_1/new/seven_seg_display.xdc 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 04:16:06 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:16:06 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 81 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin reset_IBUF with 1st driver pin 'reset_IBUF_inst/O' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:23]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net pb_up/rizz/reset_IBUF has multiple drivers: reset_IBUF_inst/O, and pb_up/rizz/state_reg/Q.. ]", 7, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net pb_up/rizz/reset_IBUF has multiple drivers: reset_IBUF_inst/O, and pb_up/rizz/state_reg/Q.. ]", 7, false, false, false, false, true, false); // ah - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ao
+// Elapsed time: 50 seconds
+selectCodeEditor("top_control_unit.v", 104, 263); // be
+selectCodeEditor("top_control_unit.v", 147, 264); // be
+selectCodeEditor("top_control_unit.v", 147, 264, false, false, false, false, true); // be - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top_control_unit.v", 147, 329); // be
+selectCodeEditor("top_control_unit.v", 144, 331); // be
+// Elapsed time: 92 seconds
+selectCodeEditor("top_control_unit.v", 85, 158); // be
+selectCodeEditor("top_control_unit.v", 85, 158, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 127, 269); // be
+selectCodeEditor("top_control_unit.v", 93, 334); // be
+selectCodeEditor("top_control_unit.v", 93, 334, false, false, false, false, true); // be - Double Click
+// Elapsed time: 65 seconds
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+// Elapsed time: 12 seconds
+selectCodeEditor("top_control_unit.v", 112, 432); // be
+selectCodeEditor("top_control_unit.v", 79, 444); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 04:22:15 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:22:15 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 83 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 12 seconds
+selectCodeEditor("top_control_unit.v", 31, 402); // be
+// Elapsed time: 43 seconds
+selectCodeEditor("top_control_unit.v", 97, 357); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 04:24:41 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:24:41 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 139 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 18, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 18, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 18, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/ impl_1/seven_seg_display.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/ impl_1/seven_seg_display.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_DEBUG_PROBES_FILE, (String) null); // s
+dismissFileChooser();
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // s
+// Elapsed time: 24 seconds
+setFileChooser("C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 38 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 178 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 1); // m
+selectCodeEditor("top.xdc", 333, 72); // be
+selectCodeEditor("top.xdc", 333, 72, false, false, false, false, true); // be - Double Click
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+selectCodeEditor("top_control_unit.v", 107, 292); // be
+selectCodeEditor("top_control_unit.v", 107, 292, false, false, false, false, true); // be - Double Click
+// Elapsed time: 221 seconds
+selectCodeEditor("top_control_unit.v", 126, 310); // be
+// Elapsed time: 124 seconds
+selectCodeEditor("top_control_unit.v", 221, 308); // be
+selectCodeEditor("top_control_unit.v", 218, 305); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 1); // m
+selectCodeEditor("top.xdc", 261, 132); // be
+// Elapsed time: 38 seconds
+closeMainWindow("dd1_Final_Project - [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.xpr] - Vivado 2022.1"); // bb
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'aK' command handler elapsed time: 11 seconds
+dismissDialog("Exit Vivado"); // A
+// Elapsed time: 309 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+// Elapsed time: 17 seconds
+selectCodeEditor("top_control_unit.v", 181, 310); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 83 MB. Current time: 5/21/25, 3:43:59 AM EET
+// Elapsed time: 158 seconds
+selectCodeEditor("top_control_unit.v", 74, 352); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+// 'cW' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 04:46:09 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 52 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 18, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // s
+setFileChooser("C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 173 seconds
+selectCodeEditor("top_control_unit.v", 191, 225); // be
+selectCodeEditor("top_control_unit.v", 191, 225, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 79, 220); // be
+selectCodeEditor("top_control_unit.v", 79, 220, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 91, 225); // be
+selectCodeEditor("top_control_unit.v", 91, 225, false, false, false, false, true); // be - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("top_control_unit.v", 43, 145); // be
+selectCodeEditor("top_control_unit.v", 43, 145, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+// Elapsed time: 23 seconds
+selectCodeEditor("top_control_unit.v", 160, 226); // be
+selectCodeEditor("top_control_unit.v", 160, 226, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 165, 229); // be
+selectCodeEditor("top_control_unit.v", 180, 209); // be
+selectCodeEditor("top_control_unit.v", 158, 204); // be
+selectCodeEditor("top_control_unit.v", 153, 197); // be
+selectCodeEditor("top_control_unit.v", 161, 214); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("top_control_unit.v", 167, 259); // be
+selectCodeEditor("top_control_unit.v", 172, 261); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 04:51:46 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 04:51:46 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 132 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 83 MB. Current time: 5/21/25, 3:54:12 AM EET
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 162 MB (+8380kb) [03:41:23]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1852 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3709.219 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 4383.383 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 4383.383 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4383.383 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 4518.773 ; gain = 1134.230 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.0
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 179 MB (+9222kb) [03:41:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  1494 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'eq' command handler elapsed time: 22 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Open Implemented Design"); // bA
+dismissDialog("Methodology Violations"); // aV
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+// Elapsed time: 74 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 29, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 28, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 28, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 28, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// Elapsed time: 144 seconds
+selectCodeEditor("top_control_unit.v", 164, 250); // be
+selectCodeEditor("top_control_unit.v", 151, 247); // be
+// Elapsed time: 247 seconds
+selectCodeEditor("top_control_unit.v", 71, 312); // be
+selectCodeEditor("top_control_unit.v", 192, 230); // be
+selectCodeEditor("top_control_unit.v", 167, 233); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("top_control_unit.v", 197, 337); // be
+selectCodeEditor("top_control_unit.v", 28, 437); // be
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 1); // m
+// Elapsed time: 27 seconds
+selectCodeEditor("top.xdc", 1, 213); // be
+typeControlKey((HResource) null, "top.xdc", 'c'); // be
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+// Elapsed time: 119 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+// Elapsed time: 19 seconds
+selectCodeEditor("top_control_unit.v", 118, 142); // be
+// Elapsed time: 101 seconds
+selectCodeEditor("top_control_unit.v", 129, 106); // be
+selectCodeEditor("top_control_unit.v", 129, 106); // be
+selectCodeEditor("top_control_unit.v", 129, 106, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 164, 307); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("top_control_unit.v", 113, 135); // be
+selectCodeEditor("top_control_unit.v", 113, 135, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 118, 152); // be
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 05:08:55 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 05:08:55 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 1); // m
+selectCodeEditor("top.xdc", 340, 279); // be
+typeControlKey((HResource) null, "top.xdc", 'c'); // be
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // al
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 05:12:05 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 05:12:05 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+// Elapsed time: 208 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC UCIO-1] Unconstrained Logical Port: 1 out of 34 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: testLed.. ]", 9, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;testLed;-;;-;10;-;"); // ah
+// HOptionPane Warning: 'Cannot find I/O port. (Select Object)'
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 23 seconds
+selectCodeEditor("top_control_unit.v", 86, 272); // be
+selectCodeEditor("top_control_unit.v", 86, 272, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 92, 267); // be
+selectCodeEditor("top_control_unit.v", 92, 267, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 1); // m
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 2); // m
+selectCodeEditor("top.xdc", 310, 311); // be
+selectCodeEditor("top.xdc", 310, 311, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectCodeEditor("top.xdc", 321, 333); // be
+selectCodeEditor("top.xdc", 321, 333, false, false, false, false, true); // be - Double Click
+// [GUI Memory]: 191 MB (+2566kb) [04:05:31]
+typeControlKey((HResource) null, "top.xdc", 'v'); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 27, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // al
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+// 'cW' command handler elapsed time: 5 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 05:18:29 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 05:18:29 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 199 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a
+dismissDialog("Feedback Request"); // aH
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 29, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 29, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 125 MB. Current time: 5/21/25, 4:24:14 AM EET
+// Elapsed time: 262 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+selectCodeEditor("top_control_unit.v", 142, 232); // be
+selectCodeEditor("top_control_unit.v", 191, 128); // be
+// Elapsed time: 163 seconds
+selectCodeEditor("top_control_unit.v", 172, 192); // be
+// Elapsed time: 105 seconds
+selectCodeEditor("top_control_unit.v", 58, 327); // be
+// Elapsed time: 68 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 119 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 30 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 46 seconds
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// Elapsed time: 23 seconds
+selectCodeEditor("top_control_unit.v", 197, 306); // be
+selectCodeEditor("top_control_unit.v", 70, 348); // be
+selectCodeEditor("top_control_unit.v", 206, 367); // be
+selectCodeEditor("top_control_unit.v", 189, 367); // be
+selectCodeEditor("top_control_unit.v", 72, 415); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("top_control_unit.v", 39, 488); // be
+selectCodeEditor("top_control_unit.v", 350, 249); // be
+selectCodeEditor("top_control_unit.v", 69, 469); // be
+selectCodeEditor("top_control_unit.v", 109, 296); // be
+selectCodeEditor("top_control_unit.v", 58, 318); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("top_control_unit.v", 255, 324); // be
+selectCodeEditor("top_control_unit.v", 236, 309); // be
+selectCodeEditor("top_control_unit.v", 120, 345); // be
+selectCodeEditor("top_control_unit.v", 212, 363); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("top_control_unit.v", 240, 403); // be
+selectCodeEditor("top_control_unit.v", 216, 421); // be
+selectCodeEditor("top_control_unit.v", 64, 469); // be
+selectCodeEditor("top_control_unit.v", 133, 418); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("top_control_unit.v", 384, 397); // be
+selectCodeEditor("top_control_unit.v", 169, 349); // be
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+// 'cW' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 05:38:06 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 26 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectCodeEditor("top_control_unit.v", 63, 95); // be
+selectCodeEditor("top_control_unit.v", 346, 94); // be
+selectCodeEditor("top_control_unit.v", 41, 326); // be
+selectCodeEditor("top_control_unit.v", 212, 282); // be
+selectCodeEditor("top_control_unit.v", 71, 317); // be
+selectCodeEditor("top_control_unit.v", 220, 206); // be
+selectCodeEditor("top_control_unit.v", 540, 251); // be
+selectCodeEditor("top_control_unit.v", 219, 162); // be
+selectCodeEditor("top_control_unit.v", 98, 192); // be
+selectCodeEditor("top_control_unit.v", 74, 337); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("top_control_unit.v", 103, 144); // be
+selectCodeEditor("top_control_unit.v", 103, 144); // be
+selectCodeEditor("top_control_unit.v", 103, 144, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 30, 333); // be
+selectCodeEditor("top_control_unit.v", 57, 315); // be
+selectCodeEditor("top_control_unit.v", 67, 331); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Save Project"); // al
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, top_control_unit.v]", 2, false); // D
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top top_control_unit [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 05:40:36 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 05:40:36 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 142 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 154 seconds
+selectCodeEditor("top_control_unit.v", 167, 267); // be
+selectCodeEditor("top_control_unit.v", 167, 267, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 164, 395); // be
+selectCodeEditor("top_control_unit.v", 119, 378); // be
+selectCodeEditor("top_control_unit.v", 119, 378, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 103, 219); // be
+selectCodeEditor("top_control_unit.v", 100, 228); // be
+selectCodeEditor("top_control_unit.v", 100, 228, false, false, false, false, true); // be - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("top_control_unit.v", 164, 228); // be
+selectCodeEditor("top_control_unit.v", 164, 228); // be
+selectCodeEditor("top_control_unit.v", 164, 228); // be
+selectCodeEditor("top_control_unit.v", 164, 228, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 73, 345); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+selectCodeEditor("top_control_unit.v", 77, 216); // be
+selectCodeEditor("top_control_unit.v", 68, 418); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+selectCodeEditor("top_control_unit.v", 81, 420); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+// Elapsed time: 135 seconds
+selectCodeEditor("top_control_unit.v", 85, 429); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 05:49:02 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 05:49:02 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 129 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 105 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31, true); // n - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("OptionPane.button", "Cancel"); // JButton
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 21 seconds
+selectCodeEditor("top_control_unit.v", 161, 170); // be
+selectCodeEditor("top_control_unit.v", 161, 170, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 165, 168); // be
+selectCodeEditor("top_control_unit.v", 165, 168, false, false, false, false, true); // be - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top_control_unit.v", 189, 235); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 124 MB. Current time: 5/21/25, 4:54:15 AM EET
+// Elapsed time: 40 seconds
+selectCodeEditor("top_control_unit.v", 172, 141); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+// 'cW' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 05:54:35 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 79 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 55 seconds
+selectCodeEditor("top_control_unit.v", 175, 146); // be
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+// 'cW' command handler elapsed time: 12 seconds
+dismissDialog("Resetting Runs"); // bA
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 05:57:24 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 05:57:24 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 138 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 91 seconds
+selectCodeEditor("top_control_unit.v", 427, 111); // be
+selectCodeEditor("top_control_unit.v", 427, 111); // be
+selectCodeEditor("top_control_unit.v", 430, 111); // be
+// Elapsed time: 32 seconds
+selectCodeEditor("top_control_unit.v", 144, 242); // be
+selectCodeEditor("top_control_unit.v", 198, 271); // be
+selectCodeEditor("top_control_unit.v", 99, 257); // be
+selectCodeEditor("top_control_unit.v", 86, 247); // be
+// Elapsed time: 102 seconds
+selectCodeEditor("top_control_unit.v", 129, 124); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+// 'cW' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 06:04:19 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 51 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 28 seconds
+selectCodeEditor("top_control_unit.v", 118, 132); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 320 seconds
+selectCodeEditor("top_control_unit.v", 2, 24); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+// Elapsed time: 83 seconds
+selectCodeEditor("top_control_unit.v", 133, 248); // be
+selectCodeEditor("top_control_unit.v", 27, 109); // be
+// Elapsed time: 47 seconds
+selectCodeEditor("top_control_unit.v", 220, 432); // be
+typeControlKey((HResource) null, "top_control_unit.v", 'v'); // be
+selectCodeEditor("top_control_unit.v", 163, 405); // be
+selectCodeEditor("top_control_unit.v", 88, 431); // be
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 06:13:44 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 06:13:45 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+// Elapsed time: 13 seconds
+selectCodeEditor("top_control_unit.v", 48, 179); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 06:14:32 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 06:14:32 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 129 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 64 seconds
+selectCodeEditor("top_control_unit.v", 133, 266); // be
+selectCodeEditor("top_control_unit.v", 224, 220); // be
+// Elapsed time: 27 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // k
+selectCodeEditor("top_control_unit.v", 242, 148); // be
+// Elapsed time: 13 seconds
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+selectCodeEditor("top_control_unit.v", 144, 46); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 1); // m
+selectCodeEditor("top.xdc", 373, 334); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 124 MB. Current time: 5/21/25, 5:24:15 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 124 MB. Current time: 5/21/25, 5:54:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 122 MB. Current time: 5/21/25, 6:24:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 122 MB. Current time: 5/21/25, 6:54:16 AM EET
+// Elapsed time: 6264 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // n - Double Click - Node
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v), spm : serial_parallel_multiplier (serial_parallel_multiplier.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_control_unit (top_control_unit.v), spm : serial_parallel_multiplier (serial_parallel_multiplier.v)]", 5, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("serial_parallel_multiplier.v", 2, 379); // be
+typeControlKey((HResource) null, "serial_parallel_multiplier.v", 'v'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 2); // m
+selectCodeEditor("serial_parallel_multiplier.v", 78, 283); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("serial_parallel_multiplier.v", 80, 348); // be
+selectCodeEditor("serial_parallel_multiplier.v", 130, 352); // be
+selectCodeEditor("serial_parallel_multiplier.v", 130, 352, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+selectCodeEditor("top_control_unit.v", 73, 233); // be
+selectCodeEditor("top_control_unit.v", 74, 233, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 74, 228); // be
+selectCodeEditor("top_control_unit.v", 71, 232); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 1); // m
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+selectCodeEditor("top_control_unit.v", 132, 232); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("top_control_unit.v", 86, 169); // be
+selectCodeEditor("top_control_unit.v", 87, 179); // be
+selectCodeEditor("top_control_unit.v", 87, 179, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 102, 395); // be
+selectCodeEditor("top_control_unit.v", 102, 395, false, false, false, false, true); // be - Double Click
+selectCodeEditor("top_control_unit.v", 95, 410); // be
+selectCodeEditor("top_control_unit.v", 95, 410, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Kirollosfady/Downloads/dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp with file C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/top_control_unit.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed May 21 08:06:19 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 08:06:19 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_STATUS_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'serial_parallel_multiplier' not found [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:68]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;68;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'serial_parallel_multiplier' not found [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:68]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;68;-;;-;16;-;"); // ah
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 1); // m
+selectCodeEditor("serial_parallel_multiplier.v", 144, 253); // be
+selectCodeEditor("serial_parallel_multiplier.v", 144, 253, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_control_unit.v", 0); // m
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, true); // g: TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'top_control_unit' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:23]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'top_control_unit' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:23]. ]", 2, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'top_control_unit' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:23]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'top_control_unit' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:23]. ]", 2, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'top_control_unit' [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:23]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'serial_parallel_multiplier' not found [C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.srcs/sources_1/new/top_control_unit.v:68]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Kirollosfady\Downloads\8-8_SPM\dd1_Final_Project\dd1_Final_Project.srcs\sources_1\new\top_control_unit.v;-;;-;16;-;line;-;68;-;;-;16;-;"); // ah
+selectCodeEditor("top_control_unit.v", 149, 193); // be
+selectCodeEditor("top_control_unit.v", 211, 171); // be
+selectCodeEditor("top_control_unit.v", 120, 153); // be
+selectCodeEditor("top_control_unit.v", 205, 156); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("top_control_unit.v", 123, 138); // be
+selectCodeEditor("top_control_unit.v", 123, 138, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "top_control_unit.v", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_parallel_multiplier.v", 1); // m
+typeControlKey((HResource) null, "serial_parallel_multiplier.v", 'v'); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 21 08:07:49 2025] Launched synth_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/synth_1/runme.log [Wed May 21 08:07:49 2025] Launched impl_1... Run output will be captured here: C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 133 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 28, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 28, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 29, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Kirollosfady/Downloads/8-8_SPM/dd1_Final_Project/dd1_Final_Project.runs/impl_1/top_control_unit.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 264 seconds
+selectCodeEditor("top_control_unit.v", 45, 146); // be
+// Elapsed time: 19 seconds
+selectCodeEditor("top_control_unit.v", 684, 259); // be
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AB3FA6A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 259 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // n
+// Elapsed time: 18 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ar
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/Kirollosfady/Downloads/8-8_SPM", 0); // aj
+dismissFileChooser();
