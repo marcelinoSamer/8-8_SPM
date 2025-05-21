@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747804069" LaunchIncrCheckpoint="$PPRDIR/../../dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747807480" LaunchIncrCheckpoint="$PPRDIR/../../dd1_Final_Project/dd1_Final_Project.srcs/utils_1/imports/synth_1/csa.dcp">
   <File Type="PA-TCL" Name="top_control_unit.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_control_unit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_control_unit_reports.tcl"/>

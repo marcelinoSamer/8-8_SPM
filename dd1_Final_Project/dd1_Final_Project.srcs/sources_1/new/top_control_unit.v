@@ -79,9 +79,9 @@ module top_control_unit(
 //----------------------
     wire [19:0] bcd_unsigned;
     wire sign_bit = product[15];
-    
+    wire [15:0] productabs = sign_bit ? (~product + 1) : product;
     bin_to_bcd #(.W(16)) converter (
-        .bin(product),
+        .bin(productabs),
         .bcd(bcd_unsigned)
     );
 

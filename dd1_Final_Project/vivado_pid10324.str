@@ -2466,3 +2466,4 @@ dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
 // Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
 selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/Kirollosfady/Downloads/8-8_SPM", 0); // aj
 dismissFileChooser();
+// HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 123 MB. Current time: 5/21/25, 7:24:17 AM EET
